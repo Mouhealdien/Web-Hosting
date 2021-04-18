@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+     <header>
+        <img src="images/logo.svg" alt="23" class="logo">
+
+        <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/ham.svg" alt="toggle-menu" class="menu" id="menu">
+            </a>
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit"><img src="images/exit.svg" alt="exit"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <section>
+         <img src="images/server.svg" alt="server" class="server">
+         <h1>Web Hosting For The Modern Era</h1>
+         <p class="subhead"> Go Serverless And Pay Only For What You Use</p>
+         <img src="images/scroll.svg" alt="scroll" class=" scroll hide-mobile show-desktop">
+
+     </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="i">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore </p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="i">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore </p>
+                </li>
+                <li class="last">
+                    <img src="images/icon-3.svg" alt="c">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                       <img src="images/user1.png" alt="us">
+                       <blockquote> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                       <figcaption>- john doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                       <img src="images/user2.png" alt="us">
+                       <blockquote> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                       <figcaption>- john doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2> Start Your Free Trail Now!</h2>
+        <a href="#" class="cta"> Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" class="logo" alt="logo">
+                </a>
+                    <p class="address"> Merlon Place , 90210 <br>USA</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click' , function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+       exit.addEventListener('click' , function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
